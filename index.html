@@ -508,7 +508,7 @@ const RISKS = [
   tech:"Use explainable-AI tools that give a reason for every decision, and test models for bias before and after launch.",
   qs:[
    {q:"Can NLNB explain in plain language why its AI flagged fraud or approved or denied a loan?", o:["Yes, for every decision","For most important decisions","Only with manual effort","Rarely","No"], fix:"Adopt explainable-AI tools that give a human-readable reason for every AI decision."},
-   {q:"Are AI models tested for bias and fairness?", o:["Before and after launch, independently","Before launch and yearly","Once at launch","Informally","Not tested"], fix:"Test credit and onboarding models for bias before launch and on a regular schedule."}
+   {q:"Are the AI models tested for bias and fairness?", o:["Before and after launch, independently","Before launch and yearly","Once at launch","Informally","Not tested"], fix:"Test credit and onboarding models for bias before launch and on a regular schedule."}
   ]},
  {id:"R10", cat:"AI", name:"Uncontrolled AI agents and poor data quality",
   desc:"With agentic banking, AI can act on customer accounts. Data that is siloed or inconsistent across the regional hubs can produce wrong outputs, and agents without oversight can make costly mistakes.",
@@ -517,7 +517,7 @@ const RISKS = [
   biz:"Set rules for which decisions AI may make on its own and which need human approval.",
   tech:"Keep an inventory of AI models, monitor them for drift, give every agent a kill switch and an audit log, and add data-quality checks to the warehouse.",
   qs:[
-   {q:"How much human oversight is there over AI acting on customer accounts?", o:["Humans approve all actions","Humans approve high-risk actions","Spot checks only","Little oversight","No oversight"], fix:"Require human approval for high-risk AI actions and give agents a kill switch."},
+   {q:"How much human oversight supervises AI acting on customer accounts?", o:["Humans approve all actions","Humans approve high-risk actions","Spot checks only","Little oversight","No oversight"], fix:"Require human approval for high-risk AI actions and give agents a kill switch."},
    {q:"How consistent is data across the regional hubs (Rochester, Philadelphia, Buffalo, Pittsburgh)?", o:["One unified data source","Mostly consistent","Some silos","Major silos","Completely siloed"], fix:"Break down regional data silos (the planned data mesh) and check data quality before AI uses it."}
   ]},
  {id:"R11", cat:"CMP", name:"Regulatory non-compliance",
