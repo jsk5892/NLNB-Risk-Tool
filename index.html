@@ -433,7 +433,7 @@ const RISKS = [
   tech:"Build a standby FIN/BODPS environment at a second site with automatic failover, and test every upgrade in a production-like environment with a rollback plan.",
   qs:[
    {q:"If FIN or BODPS failed, could a backup system take over?", o:["Yes, tested automatic failover","Backup exists, manual switch-over","Backup in the same building only","Plan on paper only","No backup"], fix:"Set up a tested failover site for FIN and BODPS. Today the data warehouse sits only in State College."},
-   {q:"How are software upgrades to core systems tested before going live?", o:["Full test in a copy of production, with rollback","Tested, with a rollback plan","Some testing, no rollback plan","Little testing","Not tested"], fix:"Require full staging tests and a rehearsed rollback for every core upgrade. A failed upgrade caused the 2022 outage."},
+   {q:"How are the software upgrades to core systems tested before going live?", o:["Full test in a copy of production, with rollback","Tested, with a rollback plan","Some testing, no rollback plan","Little testing","Not tested"], fix:"Require full staging tests and a rehearsed rollback for every core upgrade. A failed upgrade caused the 2022 outage."},
    {q:"How often is the disaster recovery plan for core systems tested?", o:["Twice a year or more","Once a year","Discussion exercise only","Never tested","No plan"], fix:"Run a full disaster recovery test at least once a year and fix the gaps it finds."}
   ]},
  {id:"R3", cat:"OPS", name:"Online banking (NorthGo) failure",
